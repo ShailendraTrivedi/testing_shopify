@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "1b7246274f7ca4aedb9720de985e6342"
+name = "new_cicd"
+handle = "new_cicd"
+application_url = "https://constant-situated-assuming-asin.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "shailendratrivedi.myshopify.com"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_themes"
+
+[auth]
+redirect_urls = [
+  "https://constant-situated-assuming-asin.trycloudflare.com/auth/callback",
+  "https://constant-situated-assuming-asin.trycloudflare.com/auth/shopify/callback",
+  "https://constant-situated-assuming-asin.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false
