@@ -1,0 +1,29 @@
+{%- assign number = app.metafields.whatsapp_configuration.whatsapp_number.value -%}
+{%- assign message = app.metafields.whatsapp_configuration.whatsapp_message.value -%}
+{%- assign includePageUrl = app.metafields.whatsapp_configuration.include_page_url.value -%}
+<div class="link-container">
+  <a target="_blank">
+    <img
+      loading="eager"
+      width="60"
+      height="60"
+      src="{{ "whatsapp2.jpg" | asset_img_url }}"
+      alt="whatsapp_chat">
+  </a>
+</div>
+<script>
+  let updatedMessage = "{{ message }}";
+  
+  if("{{ includePageUrl }}" === 'true')
+    updatedMessage = "{{ message }}".replace("{page_url}", window.location.href); 
+
+  document.querySelector('.link-container a').href = `https://api.whatsapp.com/send?phone={{ number }}&text=${ updatedMessage }`;
+</script>
+
+{% schema %}
+  {
+    "name": "WhatsApp Integration Lite",
+    "target": "body",
+    "stylesheet": "styles.css"
+  }
+{% endschema %}

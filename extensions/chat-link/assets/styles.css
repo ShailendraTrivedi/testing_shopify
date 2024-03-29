@@ -1,0 +1,17 @@
+.link-container {
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+  animation: bounce 1s linear infinite alternate;
+  z-index: 1000;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-5px);
+  }
+}

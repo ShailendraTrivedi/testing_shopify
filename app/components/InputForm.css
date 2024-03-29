@@ -1,0 +1,24 @@
+/* @import "../../node_modules/@shopify/polaris-tokens/dist/css/styles.css";
+
+.Polaris-TextField__Spinner {
+    display: none;
+} */
+
+/* .Polaris-Button {
+    padding-inline: var(--p-space-500);
+    padding-block: var(--p-space-200);
+    font-size: var(--p-font-size-350);
+    color: var(--p-color-bg-fill);
+    background-color: var(--p-color-bg-fill-success);
+    border-radius: var(--p-border-radius-150);
+}
+
+.Polaris-Button:hover{
+    color: var(--p-color-bg-fill);
+    box-shadow: var(--pc-button-box-shadow_hover);
+    background: var(--p-color-bg-fill-success-hover);
+}
+
+.Polaris-Button--disabled{
+    background: var(--p-color-bg-fill-inverse-active);
+} */
